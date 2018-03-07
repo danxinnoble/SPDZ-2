@@ -3,12 +3,13 @@ def test(actual, expected):
         actual = actual.reveal()
     print_ln('expected %s, got %s', expected, actual)
 
+def mux(cond, trueVal, falseVal):
+    return trueVal + (cond == 0) * (falseVal - trueVal)
+
 a = sint(1)
 
-if_then(cint(0))
-a = sint(2)
-else_then()
-a = sint(3)
-end_if()
+
+a = mux(sint(0), sint(2), sint(3))
+
 
 test(a, 3)
