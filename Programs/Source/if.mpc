@@ -6,10 +6,10 @@ def test(actual, expected):
 def mux(cond, trueVal, falseVal):
     return trueVal + (cond == 0) * (falseVal - trueVal)
 
-a = sint(1)
+cond = sint.get_raw_input_from(0)
+val1 = sint.get_raw_input_from(1)
+val2 = sint.get_raw_input_from(1)
 
+res = mux(cond, val1, val2)
 
-a = mux(sint(0), sint(2), sint(3))
-
-
-test(a, 3)
+test(res, 14)
