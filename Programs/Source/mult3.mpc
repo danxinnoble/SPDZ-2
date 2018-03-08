@@ -1,13 +1,6 @@
-a1 = sint.get_raw_input_from(0)
-a2 = sint.get_raw_input_from(1)
-b1 = sint.get_raw_input_from(0)
-b2 = sint.get_raw_input_from(1)
-c1 = sint.get_raw_input_from(0)
-c2 = sint.get_raw_input_from(1)
-
-a = a1 + a2
-b = b1 + b2
-c = c1 + c2
+a = sint.get_raw_input_from(0)
+b = sint.get_raw_input_from(1)
+c = sint.get_raw_input_from(2)
 
 prod = a * b * c
 print_ln('Mult3 prod = %s', prod.reveal());
